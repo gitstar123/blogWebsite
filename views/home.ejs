@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs'); -%>
+<section id = "homeSection">
+<h1>Home</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus laboriosam in maiores ad dolorem veniam voluptatem nostrum rem, voluptatibus id maxime iste quia dolorum explicabo dignissimos eum recusandae assumenda laudantium ea mollitia quis? Iure, ad, modi nemo architecto ab perferendis illum esse vel quasi quas veniam eos iusto dignissimos nisi aut odio quis rerum provident voluptates? Ipsam saepe corporis assumenda? Dolor consequuntur tempore voluptas totam, nam laudantium pariatur quam beatae, eaque veniam quisquam asperiores illum distinctio eos nostrum nihil facilis doloremque ratione deleniti minus excepturi culpa! Omnis dolorem fuga tenetur ea mollitia nobis, optio quam, inventore dignissimos voluptas recusandae?</p>
+
+<%  for(i = 0; i < title.length; i++){ %>
+        <h1><%-title[i]%></h1>
+        <form action="/posts" method="post">
+        <p>
+                <%-entry[i].substring(0,100)%>...
+                <button type="submit" id="ReadMore" name="ReadMore" value='<%-title[i]%>'>Read More</button>
+        </p>
+        </form>
+<%  }   %>
+</section>
+<%-include('partials/footer.ejs'); -%>

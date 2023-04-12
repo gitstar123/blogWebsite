@@ -1,0 +1,18 @@
+<%-include('partials/header.ejs'); %>
+<section id="compose">
+    <h1>Compose</h1>
+    <form action="/" method="post">
+        <label for="Title" style="font-weight: bold;">Title</label>
+        <br>
+        <input type="text" name="title" style="width: 100%;" required>
+        <br>
+        <br>
+        <label for="Post" style="font-weight: bold;">Post</label>
+        <br>
+        <textarea rows="8" style="width: 100%;" name="entryData" required></textarea>
+        <br>
+        <br>
+        <button type="submit">Publish</button>
+    </form>
+</section>
+<%-include('partials/footer.ejs'); %>

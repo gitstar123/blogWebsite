@@ -1,0 +1,56 @@
+
+#navigation{
+    margin: 0% 10%;
+}
+#homeSection{
+    margin: 0% 10%;
+    margin-bottom: 30%;
+
+}
+#ReadMore{
+    background-color: transparent;
+    border-color: transparent;
+    color: blue;
+}
+#about{
+    margin: 0% 10%;
+    margin-bottom: 30%;
+}
+#contact{
+    margin: 0% 10%;
+    margin-bottom: 30%;
+}
+#postSection{
+    margin: 0% 10%;
+    margin-bottom: 30%; 
+}
+#compose{
+    margin: 0% 10%;
+    margin-bottom: 30%;
+}
+input:invalid {
+    border: 2px dashed red;
+}
+input:valid{
+    border: 2px dashed black;
+}
+.container{
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+footer{
+    position: fixed;
+    height: 69px;    
+    /* display: flex; */
+    bottom: 0px;  
+    width: 100%;
+    text-align: center;  
+    background-color: gray;  
+    color: white;  
+}
+.footerText{
+    position: relative;
+    padding-top: 17px;
+}
